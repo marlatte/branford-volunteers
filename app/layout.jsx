@@ -1,5 +1,7 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
+import Header from './ui/header/header';
+import Footer from './ui/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -10,8 +12,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body
+        className={`${inter.className} flex min-h-svh flex-col bg-branford-600`}
+      >
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
