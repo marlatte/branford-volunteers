@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-branford-950 p-5 text-center text-branford-100">
+    <footer className="bg-volunteer-950 text-volunteer-100 p-5 text-center">
       <p className="flex flex-wrap justify-center gap-x-1">
         <Link className="underline underline-offset-2" href="/">
           BranfordVolunteers.Org

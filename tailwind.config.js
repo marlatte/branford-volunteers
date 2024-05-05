@@ -10,7 +10,7 @@ const tailwindConfig = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        branford: {
+        volunteer: {
           50: '#f0f8ff',
           100: '#e0f0fe',
           200: '#bae2fd',
