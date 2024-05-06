@@ -9,14 +9,13 @@ function setup() {
 
 test('header has correct num of links', () => {
   setup();
-  const num = routes.length + 1;
-  expect(screen.getByRole('banner').childElementCount).toBe(num);
-  expect(screen.getAllByRole('link').length).toBe(num);
+  const linksNum = routes.length + 1;
+  expect(screen.getByRole('banner').childElementCount).toBe(linksNum);
+  expect(screen.getAllByRole('link').length).toBe(linksNum);
 });
 
-test('header has logo image', () => {
+test('header logo has descriptive name', () => {
   setup();
-
   expect(screen.getByRole('img')).toHaveAccessibleName(
     /branford volunteers logo/i,
   );
