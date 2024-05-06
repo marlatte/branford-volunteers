@@ -14,17 +14,25 @@ import NavLinks from './nav-links';
 export default function MobileHeader() {
   const [isOpen, setIsOpen] = useState(false);
 
-  function handleClick() {
+  const toggleOpen = () => {
     setIsOpen((curr) => !curr);
-  }
+  };
+
+  const closeMenu = () => {
+    setIsOpen(() => false);
+  };
 
   return (
     <>
       {isOpen && (
-        <div className="fixed z-10 h-screen w-screen bg-black bg-opacity-25" />
+        <div
+          className="fixed top-0 z-10 h-screen w-screen bg-black bg-opacity-25 backdrop-blur-[2px]"
+          onClick={closeMenu}
+          aria-hidden
+        />
       )}
       <header
-        className={clsx('fixed z-20 flex w-screen  lg:hidden', {
+        className={clsx('fixed top-0 z-20 flex w-screen lg:hidden', {
           'flex-col bg-volunteer-950': isOpen,
           'bg-volunteer-600': !isOpen,
         })}
@@ -34,13 +42,14 @@ export default function MobileHeader() {
             href="/search"
             className="flex w-16 items-center px-4 py-2 lg:hidden"
             aria-label="Search Volunteer Opportunities"
+            onClick={closeMenu}
           >
             <SearchIcon className="stroke-2" />
           </Link>
-          <LogoLink />
+          <LogoLink onClick={closeMenu} />
           <button
             aria-label={isOpen ? 'Close Menu' : 'Menu'}
-            onClick={handleClick}
+            onClick={toggleOpen}
             type="button"
             className="w-16 p-2"
           >

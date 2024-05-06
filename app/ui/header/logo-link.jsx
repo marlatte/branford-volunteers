@@ -3,11 +3,12 @@ import Link from 'next/link';
 // eslint-disable-next-line import/no-unresolved
 import logo from '@/public/logo.png';
 
-export default function LogoLink() {
+export default function LogoLink({ onClick }) {
   return (
     <Link
       href="/"
       className="relative h-11 w-60 flex-shrink lg:mr-auto lg:h-14 lg:w-64"
+      onClick={onClick}
     >
       <Image
         src={logo}
