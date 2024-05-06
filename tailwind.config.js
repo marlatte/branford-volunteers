@@ -25,8 +25,9 @@ const tailwindConfig = {
         },
       },
       backgroundImage: {
-        'home-hero-wide': 'url("/volunteers-hero.png")',
-        'home-hero-vert': 'url("/volunteers-vert.png")',
+        'home-hero-wide-1': 'url("/volunteer-chefs.jpg")',
+        'home-hero-wide-2': 'url("/food-pantry-delivery.jpg")',
+        'home-hero-vert': 'url("/food-pantry-delivery-reversed.jpg")',
         'about-hero': 'url("/kid-with-jacket.jpg")',
       },
     },
