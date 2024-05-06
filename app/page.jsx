@@ -1,5 +1,5 @@
-// import Hero from './ui/home/hero';
-// import Images from './ui/home/images';
+import Hero from './ui/home/hero';
+import Images from './ui/home/images';
 // import SearchBtn from './ui/search-button';
 
 export default async function Page() {
@@ -19,20 +19,20 @@ export default async function Page() {
 
   return (
     <main className="flex flex-1 flex-col text-white">
-      {/* <Hero /> */}
+      <Hero />
       <section className="flex flex-col items-center">
         <div id="did-you-know" className="pb-6 pt-14">
-          <h2 className="mb-1 text-3xl text-branford-100 underline md:text-4xl">
+          <h2 className="mb-1 text-3xl text-volunteer-100 underline md:text-4xl">
             Did You Know?
           </h2>
           <p className="flex flex-col text-center text-lg md:text-xl">
-            <span>There are nearly 200</span>
+            <span>There are more than 100</span>
             <span>Branford-based</span>
             <span>nonprofits.</span>
           </p>
         </div>
       </section>
-      {/* <Images /> */}
+      <Images />
       <section className="flex flex-col items-center px-5 py-12">
         <div className="flex-1 rounded-xl border-2 p-3">
           <ul className="h-50 grid list-disc grid-cols-2 gap-x-7 gap-y-2 pl-5 text-lg sm:grid-cols-3 sm:gap-x-12 sm:text-xl md:text-2xl">
@@ -43,7 +43,7 @@ export default async function Page() {
           </ul>
         </div>
       </section>
-      <section className="bg-white p-6 text-branford-600">
+      <section className="bg-white p-6 text-volunteer-600">
         <div className="mx-auto max-w-sm sm:max-w-xl">
           <div className="flex gap-1 pl-2 text-5xl font-semibold">
             <p>&ldquo;</p>
