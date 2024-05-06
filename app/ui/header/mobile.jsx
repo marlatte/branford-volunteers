@@ -1,3 +1,5 @@
+'use client';
+
 import {
   MagnifyingGlassIcon as SearchIcon,
   Bars3Icon as MenuIcon,
