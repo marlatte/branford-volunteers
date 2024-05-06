@@ -7,7 +7,7 @@ export default function LogoLink() {
   return (
     <Link
       href="/"
-      className="relative flex h-11 w-60 items-center lg:mr-auto lg:h-14 lg:w-80"
+      className="relative h-11 w-60 flex-shrink lg:mr-auto lg:h-14 lg:w-64"
     >
       <Image
         src={logo}

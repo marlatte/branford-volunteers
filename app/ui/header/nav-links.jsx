@@ -22,7 +22,7 @@ export default function NavLinks() {
         <Link
           key={link.name}
           href={link.href}
-          className={clsx('flex-[0] text-xl xl:flex-initial', {
+          className={clsx('flex-[0] text-nowrap text-xl xl:flex-initial', {
             'underline underline-offset-4': pathname === link.href,
           })}
         >

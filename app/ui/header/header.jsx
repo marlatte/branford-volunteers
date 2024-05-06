@@ -3,7 +3,7 @@ import MobileHeader from './mobile';
 
 export default function Header() {
   return (
-    <div className="h-24 text-volunteer-50">
+    <div className="mx-auto flex h-16 w-[min(100%,_1280px)] items-center text-volunteer-50">
       <DesktopHeader />
       <MobileHeader />
     </div>
