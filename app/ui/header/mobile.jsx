@@ -20,11 +20,11 @@ export default function MobileHeader() {
 
   return (
     <header
-      className={clsx('fixed z-50 lg:hidden', {
+      className={clsx('lg:hidden', {
         'bg-volunteer-950': isOpen,
       })}
     >
-      <div>
+      <div className="flex items-center">
         <Link
           href="/search"
           className="flex w-16 items-center px-4 py-2 lg:hidden"
@@ -37,6 +37,7 @@ export default function MobileHeader() {
           aria-label={isOpen ? 'Close Menu' : 'Menu'}
           onClick={handleClick}
           type="button"
+          className="w-16 p-2"
         >
           {isOpen ? <CloseIcon /> : <MenuIcon />}
         </button>
